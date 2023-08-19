@@ -11,21 +11,60 @@
 
 
 
-const back = document.querySelectorAll('.back')
-const continue1 = document.querySelectorAll('.continue1')
+const back = document.querySelectorAll('.btn-pre')
+const continue1 = document.querySelectorAll(('.btn-next'))
 const progress = document.getElementById('steps')
-const formstep = document.querySelectorAll('.circle')
+const pagestep = document.querySelectorAll('.page-step')
+const circle = document.querySelectorAll('.circle')
+
+
+
 
 let formstepnum= 0;
 
-continue1.forEach(btn=>{
+continue1.forEach(   btn=>{
 	 btn.addEventListener('click', ()=>{
 	 	formstepnum++;
 	 	updateformsteps();
+	 	updatecircle();
 
 	 })
 })
 
+back.forEach(   btn=>{
+	 btn.addEventListener('click', ()=>{
+	 	formstepnum--;
+	 	updateformsteps();
+	 	updatecircle();
+
+	 })
+})
+
+
 function updateformsteps(){
-	formstep[formstepnum].classList.add('active')
+	pagestep.forEach(pagestep=>{
+		pagestep.classList.contains('active') && pagestep.classList.remove('active')
+	})
+
+
+	pagestep[formstepnum].classList.add('active')
+	console.log("clicked");
+
+}
+
+
+function updatecircle(){
+	circle.forEach((circle, idx) =>{
+		if(idx < formstepnum +1){
+			circle.classList.add('active')
+		}
+		else{
+			circle.classList.remove('active')
+
+		}
+	})
+
+const progressbar = document.querySelectorAll('.indicator')
+
+	progressbar.style.width = (progressbar.length -1)/( circle.length -1) *100 + '%'
 }

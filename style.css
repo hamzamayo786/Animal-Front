@@ -307,6 +307,12 @@ button.navbar-toggler{
 	width: 100%;
 	background-color: white;
 }
+.indicator{
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	background-color: blue;
+}
 
 
 .page-step{
