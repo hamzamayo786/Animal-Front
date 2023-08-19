@@ -1,0 +1,332 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	/*box-sizing: border-box;*/
+	background-image: url("img/back.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.container-fluid{
+	
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+
+}
+
+.navbar-collapse{
+	flex-grow: 0;
+}
+
+.custom ul li a{
+	color: black!important;
+
+}
+
+.collapse a{
+	color: black!important;
+}
+
+.logo-back{
+	width: 325px;
+	height: 160px;
+	margin-top: -40px;
+	position: relative;
+}
+
+
+.logoo{
+	width: 189px;
+	height: 58px;
+	position: absolute;
+	left: 70px;
+	background-color: white!important;
+
+}
+
+
+.login a{
+	padding-right: 50px;
+}
+
+
+
+
+/*==================================*/
+.main-form{
+	display: flex;
+	justify-content: center;
+}
+.form{
+	width: 40%;
+}
+	
+
+.form-info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.form-info label{
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.same{
+	margin: 8px 0;
+	width: 70%;
+	padding: 15px;
+}
+.other-dog{
+	font-size: 1.3rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: end;
+}
+
+.imgs-boy{
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.boy img{
+	width: 134px;
+	height: 147px;
+}
+
+.girl img{
+	width: 145px;
+	height: 186px;
+}
+
+.boy{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.girl{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.boy h2{
+	background-color: white;
+	padding: 10px 15px;
+	border: 2px solid #8acff0; 
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+.girl h2{
+	background-color: white;
+	padding: 10px 15px;
+	border: 2px solid #8acff0; 
+	border-radius: 10px;
+}
+
+.continue a{
+	text-decoration: none;
+	font-size: 1.7rem;
+	font-weight: 600;
+
+}
+.continue{
+	display: flex;
+	justify-content: end;
+}
+
+.submit{
+	display: flex;
+	justify-content: end;
+
+}
+
+/*===========================*/
+/*how old dog page*/
+
+.dog-age{
+	display: flex;
+	justify-content: center;
+}
+.age-cal{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.age-cal h2{
+	font-size: 1.7rem;
+	font-weight: 500;
+	background-color: white;
+	padding: 10px 25px;
+	border: 2px solid #8acff0; 
+	border-radius: 10px;
+}
+
+.year{
+	margin: 0 15px;
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.imgs-type{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgs-type .chubbi{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgs-type .ideal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgs-type .skinny{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.waight-dog{
+	display: flex;
+	justify-content: center;
+}
+
+.dog-kg{
+	display: flex;
+	justify-content: center;
+}
+
+.dog-range{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dog-range label{
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.page-move{
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*===================================*/
+/*active dog page*/
+
+.form-check{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-check input{
+	margin-right: 10px;
+	padding: 13px;
+	background-color: none;
+}
+.dog-active{
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+
+.active h2{
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+
+/*===========================*/
+/*progress bar settings*/
+
+button.navbar-toggler{
+	/*background-color: white;*/
+	color: black;
+	border: 2px solid #8acff0;
+}
+
+/*================================*/
+.progress{
+	height: 160px;
+	width: 100%;
+	background-color: #8acff0;
+	margin-top: 40px;
+}
+
+.pro-img img{
+	margin-left: 50px;
+}
+
+
+.progress .steps{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+}
+
+.steps .circle{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	/*border: 4px solid blue;*/
+	background-color: white;
+	z-index: 1;
+}
+
+.steps .progress-bar{
+	position: absolute;
+	height: 10px;
+	width: 100%;
+	background-color: white;
+}
+
+
+.page-step{
+	display: none;
+}
+
+.page-step.active{
+	display: block;
+}
+
+.circle.active{
+	background-color: blue;
+}
+
+
+
+
+/*.steps::after{
+	content: attr(data-title);
+	position: absolute;
+	top: calc(100% + 0.5rem);
+	font-size: 1.85rem;
+}*/
